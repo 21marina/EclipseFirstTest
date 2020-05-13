@@ -16,6 +16,9 @@ public class customTagTest implements Tag{
 	public int doEndTag() throws JspException {
 		// TODO Auto-generated method stub
 		String tagg="Helloworld";
+		//修改测试git本地到远程分支 commit and push 
+		//commit 只能提交整个项目,然后需要选中项目-右键-remote-push
+		//commit and push 能提交单个文件 
 		//输出tagg
 		JspWriter jw=pct.getOut();//要先获取【在setPageContext中先从参数获取】
 		//执行标签时，会自动从页面把当前pagecontext传递过来，要想传给外卖，先声明变量，然后再setpagecontext中赋值
