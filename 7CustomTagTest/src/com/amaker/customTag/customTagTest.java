@@ -16,19 +16,22 @@ public class customTagTest implements Tag{
 	public int doEndTag() throws JspException {
 		// TODO Auto-generated method stub
 		String tagg="Helloworld";
-		//ĞŞ¸Ä²âÊÔgit±¾µØµ½Ô¶³Ì·ÖÖ§ commit and push 
-		//commit Ö»ÄÜÌá½»Õû¸öÏîÄ¿,È»ºóĞèÒªÑ¡ÖĞÏîÄ¿-ÓÒ¼ü-remote-push
-		//commit and push ÄÜÌá½»µ¥¸öÎÄ¼ş 
-		//Êä³ötagg
-		JspWriter jw=pct.getOut();//ÒªÏÈ»ñÈ¡¡¾ÔÚsetPageContextÖĞÏÈ´Ó²ÎÊı»ñÈ¡¡¿
-		//Ö´ĞĞ±êÇ©Ê±£¬»á×Ô¶¯´ÓÒ³Ãæ°Ñµ±Ç°pagecontext´«µİ¹ıÀ´£¬ÒªÏë´«¸øÍâÂô£¬ÏÈÉùÃ÷±äÁ¿£¬È»ºóÔÙsetpagecontextÖĞ¸³Öµ
+		//ä¿®æ”¹æµ‹è¯•gitæœ¬åœ°åˆ°è¿œç¨‹åˆ†æ”¯ commit and push 
+		//commit åªèƒ½æäº¤æ•´ä¸ªé¡¹ç›®,ç„¶åéœ€è¦é€‰ä¸­é¡¹ç›®-å³é”®-remote-push
+		//commit and push èƒ½æäº¤å•ä¸ªæ–‡ä»¶ 
+		
+		//æµ‹è¯•ã€€ï½†ï½’ï½ï½ã€€ï½‡ï½‰ï½”ã€€ï½”ï½ã€€ï½Œï½ï½ƒï½ï½Œã€€ç”¨team-remote-pull 
+		
+		//è¾“å‡ºtagg
+		JspWriter jw=pct.getOut();//è¦å…ˆè·å–ã€åœ¨setPageContextä¸­å…ˆä»å‚æ•°è·å–ã€‘
+		//æ‰§è¡Œæ ‡ç­¾æ—¶ï¼Œä¼šè‡ªåŠ¨ä»é¡µé¢æŠŠå½“å‰pagecontextä¼ é€’è¿‡æ¥ï¼Œè¦æƒ³ä¼ ç»™å¤–å–ï¼Œå…ˆå£°æ˜å˜é‡ï¼Œç„¶åå†setpagecontextä¸­èµ‹å€¼
 		try {
 			jw.print("tagg:"+tagg);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return this.EVAL_PAGE;//eval-page±êÇ©ÓÃÍêÖ®ºó ÏÂÃæ»¹ÓĞÄÚÈİ±»Ö´ĞĞ£¬±»¼ÆËã,skip_pageÓÃÍêÖ®ºóÏÂÃæ
+		return this.EVAL_PAGE;//eval-pageæ ‡ç­¾ç”¨å®Œä¹‹å ä¸‹é¢è¿˜æœ‰å†…å®¹è¢«æ‰§è¡Œï¼Œè¢«è®¡ç®—,skip_pageç”¨å®Œä¹‹åä¸‹é¢
 	}
 
 	@Override
