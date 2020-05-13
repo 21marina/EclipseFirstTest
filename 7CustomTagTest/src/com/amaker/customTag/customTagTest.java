@@ -18,7 +18,7 @@ public class customTagTest implements Tag{
 		String tagg="Helloworld";
 		//修改测试git本地到远程分支 commit and push 
 		//commit 只能提交整个项目,然后需要选中项目-右键-remote-push
-		//commit and push 能提交单个文件 
+		//commit and push 能提交单个文件  test conflict from local
 		
 		//测试　ｆｒｏｍ　ｇｉｔ　ｔｏ　ｌｏｃａｌ　用team-remote-pull 
 		
